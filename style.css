@@ -4,6 +4,8 @@
   --cal-bg-color: #2a415f;
   --display-bg-color: #142a46;
   --num-color: #fff;
+  --operator-bg: #15aad8;
+  --equal-btn-bg: #f46d48;
   --live-display-color: #d1d1d1;
 }
 
@@ -81,6 +83,10 @@ h1{
 .row input:active{
   box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
+.row input:nth-child(4){
+  background-color: var(--operator-bg);
+}
 .row:nth-child(6) input:nth-child(3){
   width: 130px;
+  background-color: var(--equal-btn-bg);
 }
