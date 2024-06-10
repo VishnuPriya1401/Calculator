@@ -157,7 +157,7 @@ function factorial(){
     displayString=`${displayString}!`;
     liveDisplay();
     
-    if(value>=1){
+    if((value>=1)&& ((value - Math.floor(value)) === 0)){
       for(let i=value; i>0; i--){
         num *= i;
       }
