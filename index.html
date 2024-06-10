@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator learning</title>
+  <title>Sci-cal</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,14 +13,15 @@
       <div class="live-display"></div>
       <div class="solution"></div>
     </div>
-    <!--
+    
     <div class="extra-operators">
-      <input type="button" value="%" class="value">
-      <input type="button" value="^" class="value">
-      <input type="button" value="!" class="value">
-      <input type="button" value="()" class="braket">
+      <input type="button" value="%" onclick="percentage()">
+      <input type="button" value="!" onclick="factorial()">
+      <input type="button" value="sin" onclick="sin()">
+      <input type="button" value="cos" onclick="cos()">
+      <input type="button" value="tan" onclick="tan()">
+      <input type="button" value="log" onclick="log()">
     </div>
-    -->
     <div class="row">
       <input type="button" value="AC" class="clear">
       <input type="button" value="DE" class="delete">
@@ -46,6 +47,7 @@
       <input type="button" value="/" class="value">
     </div>
     <div  class="row">
+      <input type="button" value="Ans" class="answer">
       <input type="button" value="00" class="value">
       <input type="button" value="0" class="value">
       <input type="button" value=" = " class="equal">
@@ -54,4 +56,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
