@@ -154,13 +154,19 @@ function factorial(){
   if(!(displayString==="")){
     isSolution=true;
     value = Number(eval(displayString));
-    for(let i=value; i>0; i--){
-      num *= i;
-    }
-    solution.innerHTML = num;
-    answer=num;
     displayString=`${displayString}!`;
     liveDisplay();
+    
+    if(value>=1){
+      for(let i=value; i>0; i--){
+        num *= i;
+      }
+      solution.innerHTML = num;
+      answer=num;
+    }
+    else{
+      errorMessage();
+   }
   }
   else{
     errorMessage();
