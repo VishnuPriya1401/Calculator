@@ -83,6 +83,8 @@ function sin(){
     const value = Number(eval(displayString));
     answer = Math.sin(value);
     solution.innerHTML = answer;
+    displayString=`sin(${displayString})`;
+    liveDisplay();
   }
   else{
     errorMessage();
@@ -95,6 +97,8 @@ function cos(){
     const value = Number(eval(displayString));
     solution.innerHTML = Math.cos(value);
     answer = Math.cos(value);
+    displayString=`cos(${displayString})`;
+    liveDisplay();
   }
   else{
     errorMessage();
@@ -106,7 +110,9 @@ function tan(){
     isSolution=true;
     const value = Number(eval(displayString));
     solution.innerHTML = Math.tan(value); 
-    answer = Math.tan(value);  
+    answer = Math.tan(value);
+    displayString=`tan(${displayString})`;
+    liveDisplay();
   }
   else{
     errorMessage();
@@ -119,6 +125,8 @@ function log(){
     const value = Number(eval(displayString));
     solution.innerHTML = (Math.log(value)/Math.log(10)); 
     answer = (Math.log(value)/Math.log(10));
+    displayString=`log(${displayString})`;
+    liveDisplay();
   }
   else{
     errorMessage();
@@ -131,6 +139,8 @@ function percentage(){
     const value = Number(eval(displayString));
     solution.innerHTML = (value/100);
     answer = (value/100);
+    displayString=`${displayString}%`;
+    liveDisplay();
   }
   else{
     errorMessage();
@@ -149,6 +159,8 @@ function factorial(){
     }
     solution.innerHTML = num;
     answer=num;
+    displayString=`${displayString}!`;
+    liveDisplay();
   }
   else{
     errorMessage();
